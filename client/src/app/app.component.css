@@ -1,0 +1,50 @@
+@media(min-width: 768px) {
+    .container-one {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+    }
+    
+    .container-two {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+}
+
+.container-three {
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-one, .container-two, .container-three div{
+    border: 2px black solid;
+    padding: 10px;
+}
+
+.container-1 {
+    flex: 1;
+}
+
+.container-2 {
+    flex: 1;        
+}
+
+.container-3 {
+    flex: 1;    
+}
+
+.container-extra-one {    
+    flex-basis: 27%;
+}
+
+.container-extra-two {
+    flex-basis: 30%;
+}
+
+.container-extra-three {
+    flex-basis: 12%;
+}
