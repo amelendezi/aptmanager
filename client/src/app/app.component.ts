@@ -42,11 +42,46 @@ export class AppComponent {
       case this.peopleCode:
         return this.peopleOption ? this.menuItemSelectedStyle : this.menuItemStyle;
     }
-    console.log('Loading styles for main menu');
     return this.menuItemStyle;
   }
 
   toggleOption(option: string): void {
-    console.log('The option is: ' + option);
+    switch(option) {
+      case this.overviewCode:
+        this.overviewOption = true;
+        this.apartmentsOption = false;
+        this.buildingOption = false;
+        this.suppliersOption = false;
+        this.peopleOption = false;
+        break;
+      case this.apartmentsCode:
+        this.overviewOption = false;
+        this.apartmentsOption = true;
+        this.buildingOption = false;
+        this.suppliersOption = false;
+        this.peopleOption = false;
+        break;
+      case this.buildingCode:
+        this.overviewOption = false;
+        this.apartmentsOption = false;
+        this.buildingOption = true;
+        this.suppliersOption = false;
+        this.peopleOption = false;
+        break;
+      case this.suppliersCode:
+        this.overviewOption = false;
+        this.apartmentsOption = false;
+        this.buildingOption = false;
+        this.suppliersOption = true;
+        this.peopleOption = false;
+        break;
+      case this.peopleCode:
+        this.overviewOption = false;
+        this.apartmentsOption = false;
+        this.buildingOption = false;
+        this.suppliersOption = false;
+        this.peopleOption = true;
+        break;
+    }
   }
 }
