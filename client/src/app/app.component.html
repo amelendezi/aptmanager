@@ -1,74 +1,73 @@
-<div class="container-one">
-  <div class="container-1">
-    <h3>Container 1</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit.</p>
+<div class="container-header">
+  <div class="container-header-sub">
+    <p>[Component]</p>
+    <p>Header Left</p>
   </div>
 
-  <div class="container-2">
-    <h3>Container 2</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit.</p>
+  <div class="container-header-sub">
+    <p>[Component]</p>
+    <p>Header Center</p>
   </div>
 
-  <div class="container-3">
-    <h3>Container 3</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit.</p>
-  </div>
-</div>
-
-<div class="container-two">
-  <div class="container-extra-one">
-    <h3>Container 4</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
-  </div>
-
-  <div class="container-extra-one">
-    <h3>Container 5</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
-  </div>
-
-  <div class="container-extra-one">
-    <h3>Container 6</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
+  <div class="container-header-sub">
+    <p>[Component]</p>
+    <p>Header Right</p>
   </div>
 </div>
 
-<div class="container-three">
-  <div class="container-extra-three">
-    <h3>Container 7</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
+<div class="container-body">
+  <div class="container-body-left">
+    <ul class="main-menu">
+      <li class="{{getMenuItemStyle(overviewCode)}}">
+        <a href="#{{overviewCode}}" (click)="toggleOption(overviewCode)">Overview</a>
+      </li>
+      <li class="{{getMenuItemStyle(apartmentsCode)}}">
+        <a href="#{{apartmentsCode}}" (click)="toggleOption(apartmentsCode)">Apartments</a>
+      </li>
+      <li class="{{getMenuItemStyle(buildingCode)}}">
+        <a href="#{{buildingCode}}" (click)="toggleOption(buildingCode)">Building</a>
+      </li>
+      <li class="{{getMenuItemStyle(suppliersCode)}}">
+        <a href="#{{suppliersCode}}" (click)="toggleOption(suppliersCode)">Suppliers</a>
+      </li>
+      <li class="{{getMenuItemStyle(peopleCode)}}">
+        <a href="#{{peopleCode}}" (click)="toggleOption(peopleCode)">People</a>
+      </li>
+    </ul>
   </div>
 
-  <div class="container-extra-three">
-    <h3>Container 8</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
+  <div class="container-body-right">
+    <div class="container-body-right-sub" *ngIf='overviewOption'>
+      <app-overview></app-overview>
+    </div>
+    <div class="container-body-right-sub" *ngIf='apartmentsOption'>
+      <app-apartments></app-apartments>
+    </div>
+    <div class="container-body-right-sub" *ngIf='buildingOption'>
+      <app-building></app-building>
+    </div>
+    <div class="container-body-right-sub" *ngIf='suppliersOption'>
+      <app-suppliers></app-suppliers>
+    </div>
+    <div class="container-body-right-sub" *ngIf='peopleOption'>
+      <app-people></app-people>
+    </div>
+  </div>
+</div>
+
+<div class="container-footer">
+  <div class="container-footer-sub">
+    <p>[Component]</p>
+    <p>Footer Left</p>
   </div>
 
-  <div class="container-extra-three">
-    <h3>Container 9</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
+  <div class="container-footer-sub">
+    <p>[Component]</p>
+    <p>Footer Center</p>
   </div>
 
-  <div class="container-extra-three">
-    <h3>Container 10</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
-  </div>
-
-  <div class="container-extra-three">
-    <h3>Container 11</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
-  </div>
-
-  <div class="container-extra-three">
-    <h3>Container 12</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
+  <div class="container-footer-sub">
+    <p>[Component]</p>
+    <p>Footer Right</p>
   </div>
 </div>
