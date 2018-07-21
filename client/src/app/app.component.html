@@ -18,7 +18,7 @@
 <div class="container-body">
   <div class="container-body-left">
     <ul class="main-menu">
-      <li class="{{getMenuItemStyle(overviewCode)}}">        
+      <li class="{{getMenuItemStyle(overviewCode)}}">
         <a href="#{{overviewCode}}" (click)="toggleOption(overviewCode)">Overview</a>
       </li>
       <li class="{{getMenuItemStyle(apartmentsCode)}}">
@@ -37,10 +37,20 @@
   </div>
 
   <div class="container-body-right">
+    <div class="container-body-right-sub" *ngIf='overviewOption'>
+      <app-overview></app-overview>
+    </div>
+    <div class="container-body-right-sub" *ngIf='apartmentsOption'>
+      <app-apartments></app-apartments>
+    </div>
+    <div class="container-body-right-sub" *ngIf='buildingOption'>
+      <app-building></app-building>
+    </div>
+    <div class="container-body-right-sub" *ngIf='suppliersOption'>
+      <app-suppliers></app-suppliers>
+    </div>
     <div class="container-body-right-sub" *ngIf='peopleOption'>
-      <h3>Right</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-        In eleifend ultricies massa, id pretium purus convallis nec.</p>
+      <app-people></app-people>
     </div>
   </div>
 </div>
