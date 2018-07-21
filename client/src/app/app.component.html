@@ -1,36 +1,48 @@
 <div class="container-header">
-    <div class="container-header-sub">
-        <p>[Component]</p>
-        <p>Header Left</p>
-      </div>
-    
-      <div class="container-header-sub">
-        <p>[Component]</p>
-        <p>Header Center</p>
-      </div>
-    
-      <div class="container-header-sub">
-        <p>[Component]</p>
-        <p>Header Right</p>
-      </div>
+  <div class="container-header-sub">
+    <p>[Component]</p>
+    <p>Header Left</p>
+  </div>
+
+  <div class="container-header-sub">
+    <p>[Component]</p>
+    <p>Header Center</p>
+  </div>
+
+  <div class="container-header-sub">
+    <p>[Component]</p>
+    <p>Header Right</p>
+  </div>
 </div>
 
 <div class="container-body">
   <div class="container-body-left">
     <ul class="main-menu">
-      <li class="main-menu-item"><a href="#">Overview</a></li>
-      <li class="main-menu-item"><a href="#">Apartments</a></li>
-      <li class="main-menu-item"><a href="#">Building</a></li>
-      <li class="main-menu-item"><a href="#">Suppliers</a></li>
-      <li class="main-menu-item"><a href="#">People</a></li>
+      <li class="{{getMenuItemStyle(overviewCode)}}">        
+        <a href="#{{overviewCode}}" (click)="toggleOption(overviewCode)">Overview</a>
+      </li>
+      <li class="{{getMenuItemStyle(apartmentsCode)}}">
+        <a href="#{{apartmentsCode}}" (click)="toggleOption(apartmentsCode)">Apartments</a>
+      </li>
+      <li class="{{getMenuItemStyle(buildingCode)}}">
+        <a href="#{{buildingCode}}" (click)="toggleOption(buildingCode)">Building</a>
+      </li>
+      <li class="{{getMenuItemStyle(suppliersCode)}}">
+        <a href="#{{suppliersCode}}" (click)="toggleOption(suppliersCode)">Suppliers</a>
+      </li>
+      <li class="{{getMenuItemStyle(peopleCode)}}">
+        <a href="#{{peopleCode}}" (click)="toggleOption(peopleCode)">People</a>
+      </li>
     </ul>
   </div>
 
   <div class="container-body-right">
-    <h3>Right</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
-      In eleifend ultricies massa, id pretium purus convallis nec.</p>
-  </div>  
+    <div class="container-body-right-sub" *ngIf='peopleOption'>
+      <h3>Right</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum.
+        In eleifend ultricies massa, id pretium purus convallis nec.</p>
+    </div>
+  </div>
 </div>
 
 <div class="container-footer">

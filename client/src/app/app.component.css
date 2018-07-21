@@ -50,7 +50,7 @@
 .main-menu-item {
     font: 20px/1.1 Helvetica, Verdana, sans-serif;
     border-bottom: 1px solid #ccc;   
-    padding: 3px;
+    padding: 15px;
 }
 
 .main-menu-item:last-child {
@@ -62,14 +62,42 @@
     color: dimgray;
     display: block;    
    
-    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-    transition: font-size 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: font-size 0.1s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.1s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.1s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.1s ease, background-color 0.3s ease;
+    transition: font-size 0.1s ease, background-color 0.3s ease;
   }
 
   .main-menu-item a:hover{
+    font-size: 30px;
+    background: #f6f6f6;
+  }
+
+  .main-menu-item-selected {
+    font: 20px/1.1 Helvetica, Verdana, sans-serif;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #ccc;   
+    padding: 15px;
+  }
+
+  .main-menu-item-selected:last-child {
+    border: none;
+}
+
+.main-menu-item-selected a{
+    text-decoration: none;
+    color: dimgray;
+    display: block;    
+   
+    -webkit-transition: font-size 0.1s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.1s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.1s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.1s ease, background-color 0.3s ease;
+    transition: font-size 0.1s ease, background-color 0.3s ease;
+  }
+
+  .main-menu-item-selected a:hover{
     font-size: 30px;
     background: #f6f6f6;
   }
