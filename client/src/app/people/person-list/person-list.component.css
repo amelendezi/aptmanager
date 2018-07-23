@@ -1,0 +1,16 @@
+.container-persons {
+    display: flex;
+    flex-direction: column;
+    flex: 1;        
+}
+
+.person-list-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px red solid;
+    margin-top: 5px;    
+}
+
+.person-list-item-title {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
