@@ -3,12 +3,27 @@
     flex-direction: column;            
 }
 
+.container-person-list {
+    display: block;
+    padding: 10px;
+    border: 2px blue dotted;
+    height: 800px;
+    overflow-y: auto;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#000, #30ff00)
+}
+
 .person-list-item {
     display: flex;
     flex-direction: column;
     border: 1px red solid;
     margin-top: 5px;   
-    padding: 10px; 
+    padding: 10px;
+    height: 120px;
 }
 
 .person-list-item-title {
@@ -25,17 +40,18 @@
     display: flex;   
     flex-direction: column;
     justify-content: center;
-    height: 50px;    
-    border: 2px purple dotted;    
+    height: 30px;     
 }
 
 .person-list-filter-input {    
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    font: 20px/1.1 Helvetica, Verdana, sans-serif;    
+    font: 16px/1.1 Helvetica, Verdana, sans-serif;    
     text-align: center;
-    height: 35px;
-    border: 1px gray dotted;
+    height: 28px;
+    border: 1px darkgray solid;
+    box-shadow: 1px 1px darkgrey;
+    border-radius: 5px;
     color: grey;
 }
