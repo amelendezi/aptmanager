@@ -27,11 +27,11 @@
 }
 
 .container-body-left {    
-    flex-basis: 15%;        
+    flex-basis: 10%;        
 }
 
 .container-body-right {
-    flex-basis: 85%;
+    flex-basis: 90%;
     padding-left: 20px;
 }
 

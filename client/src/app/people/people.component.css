@@ -5,14 +5,15 @@
 
 .container-people-detail {
     display: flex;    
-    flex-basis: 70%;
+    flex-basis: 75%;
     border: 2px lightgreen dotted;
     padding: 10px;
 }
 
 .container-people-list {
     display: flex;
-    flex-basis: 30%;
+    flex-direction: column;
+    flex-basis: 25%;
     border: 2px lightgreen dotted;
     padding: 10px;
 }

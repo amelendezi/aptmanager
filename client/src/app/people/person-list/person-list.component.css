@@ -1,16 +1,41 @@
 .container-persons {
     display: flex;
-    flex-direction: column;
-    flex: 1;        
+    flex-direction: column;            
 }
 
 .person-list-item {
     display: flex;
     flex-direction: column;
     border: 1px red solid;
-    margin-top: 5px;    
+    margin-top: 5px;   
+    padding: 10px; 
 }
 
 .person-list-item-title {
-    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    font: bold 24px Helvetica, Verdana, sans-serif;
+}
+
+.person-list-item-subtitle {
+    font: italic 18px Helvetica, Verdana, sans-serif;
+    color: grey;
+    margin-top: -15px;
+}
+
+.container-person-list-filter {
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;    
+    border: 2px purple dotted;    
+}
+
+.person-list-filter-input {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    font: 20px/1.1 Helvetica, Verdana, sans-serif;    
+    text-align: center;
+    height: 35px;
+    border: 1px gray dotted;
+    color: grey;
 }

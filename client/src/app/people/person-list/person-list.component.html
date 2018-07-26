@@ -1,6 +1,9 @@
 <div class="container-persons" *ngIf='persons && persons.length'>
+  <div class="container-person-list-filter">
+    <div class="person-list-filter-input">Filter</div>
+  </div>      
   <div class="person-list-item" *ngFor='let person of persons'>    
     <h3 class="person-list-item-title">{{person.fullName}}</h3>
-    <p>{{person.email}}</p>
+    <p class="person-list-item-subtitle">{{person.email}} | {{person.phone}}</p>
   </div>
 </div>
