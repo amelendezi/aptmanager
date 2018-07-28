@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    font: 16px/1.1 Helvetica, Verdana, sans-serif;    
+    font: 14px/1.1 Helvetica, Verdana, sans-serif;    
     text-align: center;
     height: 28px;
     border: 1px darkgray solid;
@@ -24,8 +24,7 @@
 }
 
 .container-person-list {
-    display: block;
-    padding: 10px;
+    display: block;    
     height: 560px;
     overflow-y: auto;
 }
