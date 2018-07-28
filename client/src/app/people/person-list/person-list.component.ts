@@ -47,49 +47,49 @@ export class PersonListComponent implements OnInit {
     johnConnor.lastName = 'Connor';
     johnConnor.email = 'johnconnor@terminator.tv';
     johnConnor.phone = '+1 856 3654 4856';
-    johnConnor.profileUrl = 'sample.jpg';
+    johnConnor.profileUrl = '.\\assets\\man-1.jpg';
 
     const sarahConnor = new Person();
     sarahConnor.firstName = 'Sarah';
     sarahConnor.lastName = 'Connor';
     sarahConnor.email = 'sarahconnor@terminator.tv';
     sarahConnor.phone = '+1 856 3455 0098';
-    sarahConnor.profileUrl = 'sample.jpg';
+    sarahConnor.profileUrl = '.\\assets\\girl-1.jpg';
 
     const stevenBrown = new Person();
     stevenBrown.firstName = 'Steven';
     stevenBrown.lastName = 'Brown';
     stevenBrown.email = 's.brownie@gmail.com';
     stevenBrown.phone = '+1 845 5895 0325';
-    stevenBrown.profileUrl = 'sample.jpg';
+    stevenBrown.profileUrl = '.\\assets\\man-2.jpg';
 
     const patriciaBrown = new Person();
     patriciaBrown.firstName = 'Patricia';
     patriciaBrown.lastName = 'Brown';
     patriciaBrown.email = 'patbrown63@outlook.com';
     patriciaBrown.phone = '+1 845 5846 2647';
-    patriciaBrown.profileUrl = 'sample.jpg';
+    patriciaBrown.profileUrl = '.\\assets\\girl-2.jpg';
 
     const emilyBrown = new Person();
     emilyBrown.firstName = 'Emily';
     emilyBrown.lastName = 'Brown';
     emilyBrown.email = 'emily89@gmail.com';
     emilyBrown.phone = '+1 845 4795 4447';
-    emilyBrown.profileUrl = 'sample.jpg';
+    emilyBrown.profileUrl = '.\\assets\\girl-3.jpg';
 
     const andrewBrown = new Person();
     andrewBrown.firstName = 'Andrew';
     andrewBrown.lastName = 'Brown';
     andrewBrown.email = 'andy81@gmail.com';
     andrewBrown.phone = '+1 589 5585 4467';
-    andrewBrown.profileUrl = 'sample.jpg';
+    andrewBrown.profileUrl = '.\\assets\\man-3.jpg';
 
     const jamesFerguson = new Person();
     jamesFerguson.firstName = 'James';
     jamesFerguson.lastName = 'Ferguson';
     jamesFerguson.email = 'james.ferguson@united.uk';
     jamesFerguson.phone = '+28 9 5896 4789';
-    jamesFerguson.profileUrl = 'sample.jpg';
+    jamesFerguson.profileUrl = '.\\assets\\man-4.jpg';
 
     return [ johnConnor , sarahConnor, stevenBrown, patriciaBrown, emilyBrown, andrewBrown, jamesFerguson];
   }
