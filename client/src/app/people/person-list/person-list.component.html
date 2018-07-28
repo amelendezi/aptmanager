@@ -4,7 +4,7 @@
   </div>
   <div class="container-person-list">
     <div *ngFor='let person of filteredPersons'>
-      <app-person-list-item [title]='person.getFullName()' [subTitle]='person.email' [profilePictureUrl]='person.profileUrl'></app-person-list-item>
+      <app-person-list-item [person]='person'></app-person-list-item>
     </div>
   </div>
 </div>

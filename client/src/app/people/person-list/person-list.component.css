@@ -26,7 +26,6 @@
 .container-person-list {
     display: block;
     padding: 10px;
-    border: 2px blue dotted;
     height: 560px;
     overflow-y: auto;
 }
