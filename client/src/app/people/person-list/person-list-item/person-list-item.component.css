@@ -1,0 +1,34 @@
+.container-person-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px red solid;
+    margin-top: 8px;   
+    padding: 10px;
+}
+
+.container-person-list-item-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-person-list-item-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.person-list-item-title {
+    font: bold 16px Helvetica, Verdana, sans-serif;
+}
+
+.person-list-item-subtitle {
+    font: italic 13px Helvetica, Verdana, sans-serif;
+    color: grey;    
+}

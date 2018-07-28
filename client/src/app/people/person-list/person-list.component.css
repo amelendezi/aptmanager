@@ -3,39 +3,6 @@
     flex-direction: column;            
 }
 
-.container-person-list {
-    display: block;
-    padding: 10px;
-    border: 2px blue dotted;
-    height: 800px;
-    overflow-y: auto;
-}
-::-webkit-scrollbar{
-    width: 5px;
-}
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(#000, #30ff00)
-}
-
-.person-list-item {
-    display: flex;
-    flex-direction: column;
-    border: 1px red solid;
-    margin-top: 5px;   
-    padding: 10px;
-    height: 120px;
-}
-
-.person-list-item-title {
-    font: bold 24px Helvetica, Verdana, sans-serif;
-}
-
-.person-list-item-subtitle {
-    font: italic 18px Helvetica, Verdana, sans-serif;
-    color: grey;
-    margin-top: -15px;
-}
-
 .container-person-list-filter {
     display: flex;   
     flex-direction: column;
@@ -54,4 +21,12 @@
     box-shadow: 1px 1px darkgrey;
     border-radius: 5px;
     color: grey;
+}
+
+.container-person-list {
+    display: block;
+    padding: 10px;
+    border: 2px blue dotted;
+    height: 560px;
+    overflow-y: auto;
 }

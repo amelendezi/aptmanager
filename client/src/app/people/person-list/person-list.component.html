@@ -3,9 +3,8 @@
     <input placeholder="Filter by ..." type="text" class="person-list-filter-input" [(ngModel)]='listFilter'>
   </div>
   <div class="container-person-list">
-    <div class="person-list-item" *ngFor='let person of filteredPersons'>
-      <h3 class="person-list-item-title">{{person.getFullName()}}</h3>
-      <p class="person-list-item-subtitle">{{person.email}} | {{person.phone}}</p>
+    <div *ngFor='let person of filteredPersons'>
+      <app-person-list-item [title]='person.getFullName()' [subTitle]='person.email' [profilePictureUrl]='person.profileUrl'></app-person-list-item>
     </div>
   </div>
 </div>
