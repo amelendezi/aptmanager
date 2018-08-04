@@ -42,19 +42,19 @@ export class PersonListComponent implements OnInit {
 
   initializePersonList(): Person[] {
 
-    const johnConnor = new Person();
-    johnConnor.firstName = 'John';
-    johnConnor.lastName = 'Connor';
-    johnConnor.email = 'johnconnor@terminator.tv';
-    johnConnor.phone = '+1 856 3654 4856';
-    johnConnor.profileUrl = '.\\assets\\man-1.jpg';
+    const jeffBrown = new Person();
+    jeffBrown.firstName = 'Jeff';
+    jeffBrown.lastName = 'Brown';
+    jeffBrown.email = 'jbrown@ggarm.tv';
+    jeffBrown.phone = '+1 856 3654 4856';
+    jeffBrown.profileUrl = '.\\assets\\man-1.jpg';
 
-    const sarahConnor = new Person();
-    sarahConnor.firstName = 'Sarah';
-    sarahConnor.lastName = 'Connor';
-    sarahConnor.email = 'sarahconnor@terminator.tv';
-    sarahConnor.phone = '+1 856 3455 0098';
-    sarahConnor.profileUrl = '.\\assets\\girl-1.jpg';
+    const maryBrown = new Person();
+    maryBrown.firstName = 'Mary';
+    maryBrown.lastName = 'Brown';
+    maryBrown.email = 'mbrown@gmail.com';
+    maryBrown.phone = '+1 856 3455 0098';
+    maryBrown.profileUrl = '.\\assets\\girl-1.jpg';
 
     const stevenBrown = new Person();
     stevenBrown.firstName = 'Steven';
@@ -91,6 +91,64 @@ export class PersonListComponent implements OnInit {
     jamesFerguson.phone = '+28 9 5896 4789';
     jamesFerguson.profileUrl = '.\\assets\\man-4.jpg';
 
-    return [ johnConnor , sarahConnor, stevenBrown, patriciaBrown, emilyBrown, andrewBrown, jamesFerguson];
+    const amiraJohnson = new Person();
+    amiraJohnson.firstName = 'Amira';
+    amiraJohnson.lastName = 'Johnson';
+    amiraJohnson.email = 'amira@united.uk';
+    amiraJohnson.phone = '+28 9 5845 4458';
+    amiraJohnson.profileUrl = '.\\assets\\girl-4.jpg';
+
+    const aliciaRonis = new Person();
+    aliciaRonis.firstName = 'Alicia';
+    aliciaRonis.lastName = 'Ronis';
+    aliciaRonis.email = 'alis@united.uk';
+    aliciaRonis.phone = '+28 9 5652 5288';
+    aliciaRonis.profileUrl = '.\\assets\\girl-5.jpg';
+
+    const erickHenderson = new Person();
+    erickHenderson.firstName = 'Erick';
+    erickHenderson.lastName = 'Henderson';
+    erickHenderson.email = 'e.henderson@dhl.com';
+    erickHenderson.phone = '+45 8 5258 5547';
+    erickHenderson.profileUrl = '.\\assets\\man-5.jpg';
+
+    const andreaHenderson = new Person();
+    andreaHenderson.firstName = 'Andrea';
+    andreaHenderson.lastName = 'Henderson';
+    andreaHenderson.email = 'andreahenderson485@gmail.com';
+    andreaHenderson.phone = '+45 8 5255 8947';
+    andreaHenderson.profileUrl = '.\\assets\\girl-6.jpg';
+
+    const melindaGarrison = new Person();
+    melindaGarrison.firstName = 'Melinda';
+    melindaGarrison.lastName = 'Garrison';
+    melindaGarrison.email = 'mgarris@gmail.com';
+    melindaGarrison.phone = '+45 8 7589 6398';
+    melindaGarrison.profileUrl = '.\\assets\\girl-7.jpg';
+
+    const jamesOris = new Person();
+    jamesOris.firstName = 'James';
+    jamesOris.lastName = 'Oris';
+    jamesOris.email = 'joris@hotmail.com';
+    jamesOris.phone = '+45 8 5588 0098';
+    jamesOris.profileUrl = '.\\assets\\man-6.jpg';
+
+    const michealOris = new Person();
+    michealOris.firstName = 'Micheal';
+    michealOris.lastName = 'Oris';
+    michealOris.email = 'mo67585@outlook.com';
+    michealOris.phone = '+45 8 3454 1024';
+    michealOris.profileUrl = '.\\assets\\man-7.jpg';
+
+    const christianSlater = new Person();
+    christianSlater.firstName = 'Christian';
+    christianSlater.lastName = 'Slater';
+    christianSlater.email = 'slaterchris@hotmail.com';
+    christianSlater.phone = '+45 8 5588 2020';
+    christianSlater.profileUrl = '.\\assets\\man-8.jpg';
+
+    return [ jeffBrown , maryBrown, stevenBrown, patriciaBrown, emilyBrown, andrewBrown,
+       jamesFerguson, amiraJohnson, aliciaRonis, erickHenderson, andreaHenderson, melindaGarrison,
+       jamesOris, michealOris, christianSlater];
   }
 }
